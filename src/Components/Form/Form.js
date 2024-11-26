@@ -15,7 +15,7 @@ function Form() {
 
     const addHotelsInfo = async () => {
         try {
-            const response = await axios.post("http://localhost:5002/hotels", {
+            const response = await axios.post("https://hotelappfui.onrender.com/hotels", {
                 roomNo: hotels.roomNo,
                 type: hotels.type,
                 status: hotels.status,

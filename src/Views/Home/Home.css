@@ -1,0 +1,12 @@
+.title{
+    font-size: 3vw;
+    text-align: center;
+}
+
+#Icon{
+    color: #007bff;
+}
+
+#Icon:hover{
+    color: #0056b3
+}

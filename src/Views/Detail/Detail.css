@@ -1,0 +1,19 @@
+.heading{
+    font-size: 3vw;
+    text-align: center;
+}
+
+.room-details-card{
+    width: 50vw;
+    height: fit-content;
+    margin: auto;
+    text-align: justify;
+    padding: 1vw;
+    border-radius: 10px;
+    cursor: pointer;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+}
+
+.room-details-card:hover {
+    box-shadow: rgba(3, 102, 214, 0.3) 0px 0px 0px 3px;
+}

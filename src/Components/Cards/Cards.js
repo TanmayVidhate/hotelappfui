@@ -12,13 +12,13 @@ const Cards = () => {
 
     const loadHotelsData = async () => {
 
-        const resopnse = await axios.get("http://localhost:5002/hotels");
+        const resopnse = await axios.get("https://hotelappfui.onrender.com/hotels");
         setHotel(resopnse.data.data);
         // console.log(Hotels);
     }
 
     const deleteRoom = async (roomNo) => {
-        await axios.delete(`http://localhost:5002/hotels/${roomNo}`);
+        await axios.delete(`https://hotelappfui.onrender.com/hotels/${roomNo}`);
         window.location.reload();
     }
 

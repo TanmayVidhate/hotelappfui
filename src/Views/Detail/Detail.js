@@ -9,7 +9,7 @@ function Detail() {
     const [rooms, setRooms] = useState({});
 
     const LoadRoomData = async (roomNo) => {
-        const response = await axios.get(`http://localhost:5002/hotels/${roomNo}`);
+        const response = await axios.get(`https://hotelappfui.onrender.com/hotels/${roomNo}`);
         setRooms(response.data.data);
     }
 

@@ -11,10 +11,15 @@ const Cards = () => {
     const [Hotels, setHotel] = useState();
 
     const loadHotelsData = async () => {
-
-        const resopnse = await axios.get("https://hotelappfui.onrender.com/hotels");
-        setHotel(resopnse.data.data);
-        // console.log(Hotels);
+        try {
+            const response = await axios.get("https://hotelappfui.onrender.com/hotels");
+            setHotel(response.data.data);
+            console.log(response.data);
+        }
+        catch(error){
+            console.error("Error fetching hotel data:", error);
+        }
+        
     }
 
     const deleteRoom = async (roomNo) => {
@@ -24,7 +29,7 @@ const Cards = () => {
 
     useEffect(() => {
         loadHotelsData();
-    }, []);
+    }, [Hotels]);
 
     return (
         <>

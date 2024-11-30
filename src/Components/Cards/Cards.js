@@ -14,7 +14,8 @@ const Cards = () => {
         try {
             const response = await axios.get("https://hotelappfui.onrender.com/hotels");
             setHotel(response.data.data);
-            console.log(response.data);
+            console.log("API Response:", response);
+            // console.log(response.data);
         }
         catch(error){
             console.error("Error fetching hotel data:", error);
